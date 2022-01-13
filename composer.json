@@ -1,0 +1,39 @@
+{
+    "name": "lmeuwly/sendinblue",
+    "description": "Sendinblue API wrapper",
+    "type": "library",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "sendinblue/api-v3-sdk": "^7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurent Meuwly",
+            "email": "laurent@lmeuwly.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LMeuwly\\Sendinblue\\": "src/",
+            "LMeuwly\\Sendinblue\\Tests\\": "tests/"
+        }
+    },
+   "extra": {
+        "laravel": {
+            "providers": [
+                "LMeuwly\\Sendinblue\\SendinblueServiceProvider"
+            ],
+            "aliases": {
+                "Sendinblue": "LMeuwly\\Sendinblue\\SendinblueFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
