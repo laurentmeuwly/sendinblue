@@ -3,9 +3,9 @@
     "description": "Sendinblue API wrapper",
     "type": "library",
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^8.0|^8.1|^8.2",
         "guzzlehttp/guzzle": "^7.0",
-        "sendinblue/api-v3-sdk": "^7.4"
+        "sendinblue/api-v3-sdk": "^8.4"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
